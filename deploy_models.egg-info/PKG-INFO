@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: deploy_models
+Version: 0.0.1
+Author: mahumt
+Author-email: mahum.tofiq@outlook.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
