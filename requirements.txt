@@ -1,4 +1,10 @@
 numpy
 pandas
 seaborn
--e .
+scikit-learn
+dataclasses
+numpy
+dill
+pickle
+dataclasses
+# -e .

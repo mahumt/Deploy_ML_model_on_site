@@ -1,5 +1,5 @@
 import sys
-from src.logger import logging
+from src.logger import logging # if this is not imported then log will not store exceptions etc.
 
 # search built-in excpetion and custom exception handling in python online
 
@@ -11,8 +11,6 @@ def error_message_detail(error,error_detail:sys):
 
     return error_message
 
-    
-
 class CustomException(Exception):
     def __init__(self,error_message,error_detail:sys):
         super().__init__(error_message)
@@ -20,3 +18,11 @@ class CustomException(Exception):
     
     def __str__(self):
         return self.error_message
+
+## to check if this file is working properly    
+# if __name__ == "__main__":
+#     try:
+#         a = 1/10
+#     except Exception as e:
+#         logging.info("Divide by zero")
+#         raise CustomException(e, sys)
